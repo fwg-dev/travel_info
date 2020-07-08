@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+#3 lines of code
+# - shebang line: tells the the interpreter to use ruby
+# - require your enviroment
+# - start your program
+
+#new_cli.new.start #start changing depending on the call method variable you use
+
+require_relative “../config/environment.rb”
