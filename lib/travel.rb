@@ -4,8 +4,7 @@ class Travel
   @@all = []
   def initialize(attr_hash)
     @name = attr_hash[:name]
-    save
-  
+    save 
   end
   
   def save 
@@ -14,4 +13,7 @@ class Travel
   def self.all 
     @@all
   end  
+
+  # def countries 
+  # end 
 end 

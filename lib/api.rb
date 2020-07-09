@@ -8,7 +8,7 @@ class API
 def get_info(selected_language_code)
 
  response = HTTParty.get(BASE_URL + selected_language_code)
- countries=[]
+ countries = []
  response.select {|i| countries.push(i["name"])}
 
  return countries
