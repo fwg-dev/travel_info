@@ -25,13 +25,13 @@ API
 #codes that worked: 
 
 
-#require "httparty"
+require "httparty"
 BASE_URL = "https://restcountries.eu/rest/v2/lang/"
- selected_language_code = "ar"
-res = HTTParty.get(BASE_URL + selected_language_code)
 selected_language_code = "ar"
+res = HTTParty.get(BASE_URL + selected_language_code)
+
 res.select {|i| puts i["name"]}
 
  Res[0]["name"]
 
-
+selected_language_code = "ar"
