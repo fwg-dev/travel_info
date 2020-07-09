@@ -43,6 +43,17 @@ response.select {|i| puts i["name"]}
 
 selected_language_code = "ar"
 
+def get_info(selected_language_code)
+ response = HTTParty.get(BASE_URL + selected_language_code)
+ countries = []
+ response.select {|i| countries.push(i["name"])}
+ return countries
+end
+if choice = 1 
+   countries = api.get_info("en")
+   puts countries
+  end 
+ - the above code(46 - 56) works because it spits out the list of countries  46-50 belongs to the api class and 52 - 55 belongs to the cli class 
 
 notes from API 
 
