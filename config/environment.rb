@@ -12,6 +12,5 @@ Bundler.require #require at runtime
 
 require_relative "../lib/api.rb"
 require_relative "../lib/cli.rb"
-# require_relative "../lib/travel.rb"
+require_relative "../lib/travel.rb"
 
-puts "Hello"
