@@ -35,7 +35,12 @@ API
 require "httparty"
 BASE_URL = "https://restcountries.eu/rest/v2/lang/"
 selected_language_code = "ar"
-res = HTTParty.get(BASE_URL + selected_language_code)
+response = HTTParty.get(BASE_URL + selected_language_code)
+countries =[]
+ response.select {|i| countries.push(
+   {name: i["name"], area: i["area"]}
+   )}
+   puts countries 
 
 response.select {|i| puts i["name"]}
 
@@ -78,3 +83,26 @@ notes from CLI(assesment prep)
 
 #self # what is self? in an instance method, it is an instance- the instance used to call the method
     
+
+    Is there any way I could have my user_input change dictate what is being pulled from my api? 
+
+
+    
+ user input options 
+<!-- #     # choice = get_user_input("What language do you want? \n 1.Arabic \n 2.English\n 3.French \n 4.Spanish")
+ if choice == "1"
+  selected_language = "ar"
+ elsif choice == "2"
+  selected_language = "en"
+elsif choice == 3
+ selected_language = "fr"
+elsif choice == 4
+selected_language = "es"
+ else 
+print "Wrong input, please try again"
+ end 
+#     end 
+#   # end 
+#   def countries 
+#     countries = api.get_info("en")
+  # end  -->
