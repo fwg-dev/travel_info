@@ -1,6 +1,7 @@
 #required gems 
 require "httparty"
 require "pry"
+require "colorize"
 # require "travel_info/version"
 
 
