@@ -1,8 +1,5 @@
-# TravelInfo
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/travel_info`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+# Travel Info
+ This is Ruby Gem provides a list of countries that speak a language an app that would enable the User to select a language from a menu and the app would populate a list of countries that speak that language.
 
 ## Installation
 
@@ -30,6 +27,12 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+## Instructions: 
+When you run the generator, you'll be asked to choose a number between 1-4 that match the languages provided in the menu. 
+When you choose the number, a list of countries that speak that language will be populated. 
+If you'd like to learn about another language, please select 'y'and press enter when prompted.Then select another number. 
+If you do not want to learn about different language, please enter any key to exit the app. 
+ 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/travel_info.
