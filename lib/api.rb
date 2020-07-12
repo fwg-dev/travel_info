@@ -11,7 +11,7 @@ class API
   def get_info(selected_language_code)
   #this argument is needed #get requests the server to return either a collection or a single item of collection 
  @response = HTTParty.get(BASE_URL + selected_language_code)  
- binding.pr
+ binding.pry
   end
 end 
 
