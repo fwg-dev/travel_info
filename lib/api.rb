@@ -11,13 +11,13 @@ class API
   def get_info(selected_language_code)
   #this argument is needed #get requests the server to return either a collection or a single item of collection 
  @response = HTTParty.get(BASE_URL + selected_language_code)  
- 
+ binding.pr
   end
 end 
 
 # puts countries #this prints out the list of countries when called upon 
 
-#  binding.pr
+
 # print_countries =  response.select {|i| countries.push(i["name"])}
 
 # get_info(selected_language_code)
