@@ -1,21 +1,20 @@
 class Travel
-  attr_accessor :name
-
-#   @@all = []
-#   def initialize(attr_hash)
-#     @name = attr_hash[:name]
-#     @country = []
-#     save 
-#   end
+   attr_accessor  :all
+    @@all = []
+   def initialize
+  @all = []
+   end
+   
+  def get_data(input)
+    input.select do |i|
+      @all << i["name"]
+    end
+  end
   
-#   def save 
-#     @@all << self 
-#   end 
-#   def self.all 
-#     @@all
-#   end  
+  def self.all 
+    @@all 
+  end 
 
-#  def selected_language
-
-#  end 
 end 
+
+
