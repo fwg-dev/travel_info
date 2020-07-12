@@ -83,26 +83,21 @@ notes from CLI(assesment prep)
 
 #self # what is self? in an instance method, it is an instance- the instance used to call the method
     
+ Is there any way I could have my user_input change dictate what is being pulled from my api? 
 
-    Is there any way I could have my user_input change dictate what is being pulled from my api? 
 
+#provide the user interface - to get user input and puts
+#this runs the show - this is the users session
+require 'colorize'
+ require 'pry'
 
-    
- user input options 
-<!-- #     # choice = get_user_input("What language do you want? \n 1.Arabic \n 2.English\n 3.French \n 4.Spanish")
- if choice == "1"
-  selected_language = "ar"
- elsif choice == "2"
-  selected_language = "en"
-elsif choice == 3
- selected_language = "fr"
-elsif choice == 4
-selected_language = "es"
- else 
-print "Wrong input, please try again"
- end 
-#     end 
-#   # end 
-#   def countries 
-#     countries = api.get_info("en")
-  # end  -->
+Gem installation 
+``ruby
+gem 'travel_info'
+```
+
+And then execute:
+
+    $ bundle install
+
+Or install it yourself as:
