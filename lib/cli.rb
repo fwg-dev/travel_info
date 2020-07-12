@@ -21,7 +21,7 @@ class CLI
  
     if user_input == "1"
       @api.get_info("ar")
-      puts countries_list
+      puts countries_list 
     elsif user_input == "2"
       @api.get_info("en")
       puts countries_list 
@@ -37,7 +37,7 @@ class CLI
     next #equivalent of 'continue' in java? 
     end
    
-    puts "\nWould you like to learn about a different language? press 'y' to continue press any key to exit"
+    puts "\nWould you like to learn about a different language? press 'y' to continue press any key to exit".magenta
     user_input = gets.strip.to_s.downcase
     if user_input == "y"
      next
