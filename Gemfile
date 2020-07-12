@@ -8,4 +8,6 @@ gem "rspec", "~> 3.0"
 gem "httparty"
 gem "pry"
 gem "colorize"
-gem 'travel_info'
+# gem 'travel_info'
+
+
