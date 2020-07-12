@@ -4,7 +4,7 @@ class CLI
 
   def start
     @api = API.new
-  
+    @travel = Travel.new
     ui
   end 
     
@@ -36,7 +36,10 @@ class CLI
     end  
     end 
   end 
-  
+    def countries_list  
+      puts @travel.all
+    end
+    
   def space 
     puts ""
   end 
