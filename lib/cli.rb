@@ -15,7 +15,7 @@ class CLI
     print "When you select a language from the menu below, the program will display a list of countries that speak that langauge.".yellow
     space
   while(true)
-    puts "\nWhat language do you want to learn about? Please select a number from the menu and press enter"
+    puts "\nWhat language would you like to learn about? Please select a number from the menu and press enter"
       print " \n 1.Arabic \n 2.English\n 3.French \n 4.Spanish\n\n".cyan
     user_input = gets.strip
  
@@ -37,7 +37,7 @@ class CLI
     next #equivalent of 'continue' in java? 
     end
    
-    puts "\nWould you like to learn about a different language? press 'y' to continue press any key to exit".magenta
+    puts "\nCurious about a different language? press 'y' to continue press any key to exit".magenta
     user_input = gets.strip.to_s.downcase
     if user_input == "y"
      next
