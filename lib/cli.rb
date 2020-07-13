@@ -5,10 +5,10 @@ class CLI
   def start
     @api = API.new
     @travel = Travel.new
-    ui
+    user_interaction
   end 
     
-  def ui
+  def user_interaction
     space 
     print "Welcome to your travel guide.".yellow 
     space
