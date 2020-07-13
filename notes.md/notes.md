@@ -101,3 +101,5 @@ And then execute:
     $ bundle install
 
 Or install it yourself as:
+
+ chmod go-w /usr/local/bin
